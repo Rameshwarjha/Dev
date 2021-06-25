@@ -1,0 +1,8 @@
+.cell-content{
+    
+    background: aquamarine;
+        
+    border: 1px solid;
+        
+    height: calc( 100vh - 150px);
+    }

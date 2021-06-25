@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.menu {
+border: 1px solid;
+height: 35px;
+}
+
+.menu-options {
+    border: 1px solid;
+    height: 50px;}
+
+.adress-content {
+
+border: 1px solid;
+height: 30px;
+}
+
+.cells-content {
+
+/* border: 1px solid; */
+
+height: calc( 100vh - 125px );
+
+/* background: aquamarine; */
+
+overflow: auto;
+
+position: relative;
+}
+
+.sheets {
+border: 1px solid;
+height: 30px;
+}
+.row {
+
+display: flex;
+
+/* border: 1px solid; */
+
+/* min-height: 25px;
+
+min-width: 100vh; */
+
+/* justify-content: center; */
+
+/* overflow: true; */
+}
+.cell {
+    
+border: 1px solid;
+    
+min-height: 25px;
+    
+min-width: 75px;
+    
+max-width: 75px;
+    
+/* justify-content: center;
+    
+align-items: center;
+    
+text-align: center; */
+}
+.top-left-cell {
+
+/* border: 1px solid; */
+
+height: 25px;
+
+width: 75px;
+
+/* position: absolute; */
+
+position: absolute;
+
+z-index: 3;
+
+background: lightgrey;
+}
+.top-row {
+    display: flex;
+    /* border: 1px solid; */
+    position: absolute;
+    /* min-height: 25px;
+    min-width: 100vh; */
+    top: 0px;
+    /* left: 30px; */
+    /* position: fixed; */
+   
+    left: 75px;
+    background: aquamarine;
+    z-index: 2;
+}
+.top-row-cell {
+
+border: 1px solid;
+
+display: flex;
+
+min-height: 25px;
+
+min-width: 75px;
+
+/* text-align: center; */
+
+justify-content: center;
+
+align-items: center;
+}
+.left-col {
+
+/* min-height: 25px; */
+
+/* min-width: 75px; */
+
+width: 75px;
+
+position: absolute;
+background: aquamarine;
+
+/* position: fixed; */
+
+top: 25px;
+z-index: 2;
+
+
+}
+.left-col-cell {
+    
+border: 1px solid;
+    
+height: 25px;
+    
+width: 75px;
+display: flex;
+    
+justify-content: center;
+    
+align-items: center;
+    
+/* text-align: center; */
+}
+.rows-container {
+    
+position: absolute;
+    
+top: 25px;
+    
+left: 75px;
+    
+background: white;
+    
+/* z-index: 1; */
+}
