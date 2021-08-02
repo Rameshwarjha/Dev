@@ -1,0 +1,28 @@
+.card-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card-base{
+    width: 350px;
+    height: 500px;
+
+}
+
+.card-one{
+    background-color: gold;
+
+}
+
+.card-two{ 
+    background-color: dimgray;
+
+
+}
+
+.card-three{
+    background-color: skyblue;
+
+
+}
