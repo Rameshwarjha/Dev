@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let obj = {
+        //     name: "Rj",
+        //     sayhi: function(){
+        //         console.log("function says hi!!");
+        //         console.log(this);
+        //         function inside(){
+        //             console.log("inside the function inside!!");
+        //             console.log(this);
+
+        //         }
+        //         inside();   //this will be window object
+
+        //     }
+        // }
+
+        // obj.sayhi();  //method invoke
+
+
+
+    </script>
+    <script>
+
+         let obj = {
+            name: "Rj",
+            sayhi: function(){
+                console.log("function says hi!!");
+                console.log(this);
+                const inside=()=>{   // it is an arrow function syntax
+                    //there is no "this" of arrow function 
+                    //arrow function sets its "this" ->jiske lexical scope mai ye hai uska "this" le leta hai 
+                    console.log("inside the function inside!!");
+                    console.log(this);
+
+                }
+                inside();   //this will be window object
+
+            }
+        }
+
+        obj.sayhi();  //method invoke
+
+
+
+    </script>
+    
+</body>
+</html>

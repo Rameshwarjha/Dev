@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let obj={
+            name: "shivam",
+            sayhi: function(){
+                console.log(this);         // this will be pointing to the current object
+
+                console.log("function says hi!!!");
+                function inside(){
+                    console.log(this);     //this of simple function so this = window object;
+                    console.log("function inside this!!");
+                }
+                inside();   // this will be window object as it is simple call to a simple function
+
+                let  bindedfunction =inside.bind(obj);  // this will be set to obj.  // we are binding the simple function "inside" with object "obj"
+                bindedfunction();               // binded function is used to make call as now with bind "this" ->(equals to) this of object it is binded with
+
+
+                
+            },
+            
+
+        }
+
+
+        // 1.  function inside object is known as method
+
+        obj.sayhi();     //method call/invoke
+
+
+
+        //if we store the method in a variable
+
+        let fun = obj.sayhi;     // we are storing a method in a variable so after storing in a varible it will not remain a method call rather it will become a simple function call
+        console.log("fun function is called here");
+        fun();               // this-> window object      ; because fun() is now a simple function not a method call 
+
+
+        // 2. simple function are known as function
+        function callme(){
+            console.log(this);
+            console.log("call me function called");
+
+        }
+        callme();  //function call/invoke
+
+
+
+        function passmevaluetocall(name){
+           console.log(this);
+           console.log(`myname is ${name}`);
+            
+        }
+        passmevaluetocall("Rj");
+
+
+
+
+    </script>
+    
+</body>
+</html>

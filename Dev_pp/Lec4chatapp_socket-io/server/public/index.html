@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat app</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="left-view">
+            <div class="me">
+                <div class="user-img">
+                    <img src="" alt="">
+                </div>
+                <div class="user-name"></div>
+            </div>
+            <div class="online-list">
+                <div class="user">
+                    <div class="user-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="user-name"></div>
+                </div>
+                <div class="user">
+                    <div class="user-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="user-name"></div>
+                </div>
+                <div class="user">
+                    <div class="user-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="user-name"></div>
+                </div>
+                <div class="user">
+                    <div class="user-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="user-name"></div>
+                </div>
+                
+            </div>
+    
+        </div>
+        <div class="right-view">
+            <div class="chat-window">
+                <div class="chat join">sumit joined the chat</div>
+                <div class="chat leave">sumit left the chat</div>
+                <div class="chat left">Hey guys hiofngoidoihvofinkboifhbokdfxbnoidfbnfbjkvnbiofbn v </div>
+                <div class="chat right">Hi Everyone!</div>
+                <div class="chat right">how are you</div>
+                <div class="chat left">fine</div>
+            </div>
+            <div class="input-window">
+                <input type="text" class="chat-input">
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js" integrity="sha512-PU5S6BA03fRv1Q5fpwXjg5nlRrgdoguZ74urFInkbABMCENyx5oP3hrDzYMMPh3qdLdknIvrGj3yqZ4JuU7Nag==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let socket = io();
+        console.log(socket);
+
+
+    </script>
+    <script src="./script.js"></script>
+    <script src="./socket.js"></script>
+</body>
+</html>
