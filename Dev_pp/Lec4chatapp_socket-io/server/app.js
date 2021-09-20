@@ -12,7 +12,7 @@ const io = new Server(server);
 
 app.use(express.static("public"));
 
-const userlist = [];
+let userlist = [];
 
 io.on("connection", function(socket){
     console.log(socket.id + " connected");
@@ -31,8 +31,23 @@ io.on("connection", function(socket){
 
     })
 
-    socket.on("disconnection", function(socket.id){
-        for(userid )
+    socket.on("disconnect", function(){
+        let leftuser;
+        let remuser= userlist.filter(function(userobj){
+            leftuser= userobj.username;
+            if(userobj.id == socket.id){
+                
+               
+                return false;
+
+            }
+            return true;
+
+        })
+        userlist= remuser;
+        console.log(leftuser)
+
+        socket.broadcast.emit("userdisconnected", leftuser);
 
     })
 

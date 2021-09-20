@@ -22,3 +22,14 @@ socket.on("chatmessage", function(messageobj){
     chatwindow.append(incomingmessage);
 
 })
+
+socket.on("userdisconnected", function(leftuser){
+    let leftuserkadiv = document.createElement("div");
+    leftuserkadiv.classList.add("chat");
+    leftuserkadiv.classList.add("leave");
+    leftuserkadiv.textContent = leftuser+ "left the chat";
+
+    chatwindow.append(leftuserkadiv);
+
+    
+})
